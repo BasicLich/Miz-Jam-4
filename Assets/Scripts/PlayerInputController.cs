@@ -4,32 +4,37 @@
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerInputController : MonoBehaviour
 {
+    private const float Speed = 2;
+    
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
     
-    void Start()
+    private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W))
+        var xAcceleration = Input.GetAxis("Horizontal");
+        var yAcceleration = Input.GetAxis("Vertical");
+
+        if (yAcceleration > 0)
         {
-            _rigidbody2D.velocity = Vector2.up;
+            _rigidbody2D.velocity = Speed * yAcceleration * Vector2.up;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (yAcceleration < 0)
         {
-            _rigidbody2D.velocity = Vector2.down;
+            _rigidbody2D.velocity = Speed * -yAcceleration * Vector2.down;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (xAcceleration > 0)
         {
-            _rigidbody2D.velocity = Vector2.left;
+            _rigidbody2D.velocity = Speed * -xAcceleration * Vector2.left;
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (xAcceleration < 0)
         {
-            _rigidbody2D.velocity = Vector2.right;
+            _rigidbody2D.velocity = Speed * xAcceleration * Vector2.right;
         }
         else
         {
