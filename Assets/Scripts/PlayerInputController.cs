@@ -17,28 +17,7 @@ public class PlayerInputController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var xAcceleration = Input.GetAxis("Horizontal");
-        var yAcceleration = Input.GetAxis("Vertical");
-
-        if (yAcceleration > 0)
-        {
-            _rigidbody2D.velocity = Speed * yAcceleration * Vector2.up;
-        }
-        else if (yAcceleration < 0)
-        {
-            _rigidbody2D.velocity = Speed * -yAcceleration * Vector2.down;
-        }
-        else if (xAcceleration > 0)
-        {
-            _rigidbody2D.velocity = Speed * -xAcceleration * Vector2.left;
-        }
-        else if (xAcceleration < 0)
-        {
-            _rigidbody2D.velocity = Speed * xAcceleration * Vector2.right;
-        }
-        else
-        {
-            _rigidbody2D.velocity = Vector2.zero;
-        }
+        var acceleration = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        _rigidbody2D.velocity = Speed * acceleration;
     }
 }

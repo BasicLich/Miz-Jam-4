@@ -7,6 +7,7 @@
         <e p="Scripts" t="Include">
           <e p="BulletController.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
+          <e p="PlayerAnimatorController.cs" t="Include" />
           <e p="PlayerDeath.cs" t="Include" />
           <e p="PlayerInputController.cs" t="Include" />
           <e p="PlayerShooting.cs" t="Include" />
