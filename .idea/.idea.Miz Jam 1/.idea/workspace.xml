@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="732f3db5-c584-4dc7-818d-89a389844952" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Miz Jam 1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Miz Jam 1/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Miz Jam 1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Miz Jam 1/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Miz Jam 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Miz Jam 1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UpDownEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UpDownEnemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerShooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerShooting.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,22 +24,28 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInputController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAnimatorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShootReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerShooting.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PickupController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/46/4eb0feea/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AggroEnemy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerAnimatorController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PickupController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerShooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AggroEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShootReceiver.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +105,7 @@
       <workItem from="1597448437319" duration="4155000" />
       <workItem from="1597456687176" duration="1342000" />
       <workItem from="1597471094186" duration="3239000" />
+      <workItem from="1597507716789" duration="10124000" />
     </task>
     <servers />
   </component>

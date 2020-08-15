@@ -5,7 +5,7 @@ public class PlayerDeath : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.name == "Enemy")
+        if (other.collider.name == "Enemy" || other.collider.name == "AggroEnemyBody")
         {
             StartCoroutine(Respawn());
         }
