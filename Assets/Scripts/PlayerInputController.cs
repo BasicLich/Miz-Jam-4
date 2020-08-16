@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(SpriteRenderer))]
 public class PlayerInputController : MonoBehaviour
 {
-    private const float Speed = 2;
+    [FormerlySerializedAs("Speed")] public float speed = 2;
     
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
@@ -18,6 +19,6 @@ public class PlayerInputController : MonoBehaviour
     private void FixedUpdate()
     {
         var acceleration = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        _rigidbody2D.velocity = Speed * acceleration;
+        _rigidbody2D.velocity = speed * acceleration;
     }
 }

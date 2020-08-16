@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(SpriteRenderer))]
@@ -17,6 +18,14 @@ public class BulletController : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _destructTime = Time.time + FuseLength;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name == "NonWalkable")
+        {
+            Destroy(gameObject);
+        } 
     }
 
     private void FixedUpdate()

@@ -3,18 +3,25 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
 {
+    [SerializeField] private GameObject deathAnimationPrefab;
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.name == "Enemy" || other.collider.name == "AggroEnemyBody")
-        {
-            StartCoroutine(Respawn());
-        }
+        var otherCollider = other.collider;
+        var isAggroEnemy = otherCollider.name == "AggroEnemyBody";
+       
+        if (otherCollider.name != "Enemy" && !isAggroEnemy) return;
+        
+        deathAnimationPrefab.transform.position = transform.position;
+        Instantiate(deathAnimationPrefab);
+        transform.position = new Vector3(-9999, -9999);
+        StartCoroutine(Respawn(isAggroEnemy, otherCollider.gameObject));
     }
     
-    IEnumerator Respawn()
+    IEnumerator Respawn(bool isAggroEnemy, GameObject aggroEnemy)
     {
-        transform.position = new Vector3(999, 999);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
+        if (isAggroEnemy) aggroEnemy.GetComponent<EnemyPositionReset>().ResetEnemyPosition();
         transform.position = Vector3.zero;
     }
 }

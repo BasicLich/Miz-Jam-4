@@ -6,14 +6,22 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AggroEnemy.cs" t="Include" />
+          <e p="AutoDestroyExplosion.cs" t="Include" />
           <e p="BulletController.cs" t="Include" />
+          <e p="CameraController.cs" t="Include" />
+          <e p="CarDrivingController.cs" t="Include" />
           <e p="EnemyController.cs" t="Include" />
+          <e p="EnemyDeathController.cs" t="Include" />
+          <e p="EnemyPositionReset.cs" t="Include" />
+          <e p="FollowCamera.cs" t="Include" />
+          <e p="NavigationMananger.cs" t="Include" />
+          <e p="NavigationTrigger.cs" t="Include" />
           <e p="PickupController.cs" t="Include" />
           <e p="PlayerAnimatorController.cs" t="Include" />
           <e p="PlayerDeath.cs" t="Include" />
           <e p="PlayerInputController.cs" t="Include" />
-          <e p="PlayerShooting.cs" t="Include" />
-          <e p="ShootReceiver.cs" t="Include" />
+          <e p="PressEnter.cs" t="Include" />
+          <e p="Shooting.cs" t="Include" />
         </e>
       </e>
       <e p="Miz Jam 1.sln" t="IncludeFlat" />

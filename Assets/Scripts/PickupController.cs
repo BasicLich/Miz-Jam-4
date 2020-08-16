@@ -8,6 +8,6 @@ public class PickupController : MonoBehaviour
     {
         if (other.name != "Player") return;
         Destroy(gameObject);
-        other.GetComponent<PlayerShooting>().gunCode = itemCode;
+        other.GetComponent<Shooting>().gunCode = itemCode;
     }
 }

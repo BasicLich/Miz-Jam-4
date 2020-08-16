@@ -7,6 +7,7 @@ TagManager:
   - EnemyCollider
   - EnemyDownCollider
   - EnemyUpperCollider
+  - Car
   layers:
   - Default
   - TransparentFX
